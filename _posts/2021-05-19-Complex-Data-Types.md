@@ -115,3 +115,51 @@ var numbers = Set<Int>()    // Creating empty set
 Creating empty set is done differently. Swift has special syntax for `dictionaries` and `arrays`
 
 ## Enumerations
+Enumerations - usually called `enums` - are a way of defining groups of related values.
+```swift
+let result = "failure"
+let result2 = "fail"
+```
+`result` and `result2` mean different things.
+To prevent using different naming for the same meaning, we can define an `Result` type enum that can be either `success` and `failure`
+```swift
+enum Result {
+    case success
+    case failure
+}
+```
+When we use it, we must choose either one of those two values:
+```swift
+let result3 = Result.failure
+```
+This can help prevent using different strings each time
+
+## Enum Associated Values
+`Enums` can store associated values to each case
+```swift
+enum State {
+    case running(destination: String)
+    case sleeping(duration: Int)
+    case eating(food: String)
+}
+```
+Now we can be more precise:
+```swift
+let eating = State.eating(food: "Pizza")
+```
+
+## Enum Raw Values
+Sometimes we want to assign values to enums. 
+To create Level enum that stores `Int` values:
+```swift
+enum Level: Int {
+    case beginner
+    case intermediate
+    case professional
+}
+```
+Swift will automatically assign each of those numbers starting from 0.
+You can use that number to create an instance of the appropriate enum case
+```swift
+let devj = Level(rawValue: 2)    // This will assign professional to devj
+```
