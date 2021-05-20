@@ -103,7 +103,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:this.aseptic@gmail.com"
-    - label: "Website"
+    - label: "Portfolio"
       icon: "fas fa-fw fa-link"
       url: "https://www.jongwonjang.com"
     - label: "Twitter"
