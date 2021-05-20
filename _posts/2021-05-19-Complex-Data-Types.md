@@ -65,3 +65,53 @@ If you need a collection that can contain __duplicates__, or the __order matters
 let languages = ["Python", "Swift", "Java", "Java" ]
 ```
 
+## Dictionaries
+`Dictionaries` are collections of values like `arrays`, but rather than storing things with an integer position, you can access them using anything you want
+```swift
+let imdb = [
+    "Star Wars": 9.5,
+    "Harry Potter": 7.7
+]
+```
+You seperate the value you want to store from the identifier(__keys__) using a colon
+`keys` can be used to read data back out of the dictionary:
+```swift
+imdb["Star Wars"]
+```
+When using type annotations, dictionaries are written in brackets with a colon between the identifier and value types, like:
+```swift
+[String: String]
+[Double: String]
+```
+
+## Dictionary Default Values
+If you try to read a value from a dictionary using a key that doesn't exist, Swift will send you back `nil`
+We can provide a default value to use if we request a missing key
+```swift
+let devj = [
+    "first": "Jongwon"
+    "last": "Jang"
+```
+If we try to read `devj`'s `middle` value:
+```swift
+devj["middle"]
+```
+we would get back `nil`. However, we can fix this by giving a default value of our own like:
+```swift
+devj["middle", default: "unknown"]
+```
+
+## Creating Empty Collections
+`Arrays`, `Sets`, and `Dictionaries` are called __collections__
+You can create an empty collection by writing its type followed by opening and closing parentheses
+```swift
+var apple = [String: String]()    // Creating empty dictionary
+apple["phone"] = "iPhone"    // add entities
+
+var score = [Int]()    // Creating empty array
+
+var numbers = Set<Int>()    // Creating empty set
+```
+Creating empty set is done differently. Swift has special syntax for `dictionaries` and `arrays`
+
+## Enumerations
