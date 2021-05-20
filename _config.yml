@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Jongwon Jang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me.jpeg"
   bio              : "Software Developer"
   location         : "Toronto, Ontario, Canada"
   email            : "this.aseptic@gmail.com"
