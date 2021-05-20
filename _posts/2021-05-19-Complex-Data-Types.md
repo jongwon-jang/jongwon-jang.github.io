@@ -49,18 +49,18 @@ name.first
 ```
 
 ## Arrays vs Sets vs Tuples
-If you need a __specific__, __fixed__ collection of related values, use a __tuple__
+If you need a __specific__, __fixed__ collection of related values, use a *tuple*
 ```swift
 let address = (streetNo: 777, street: "Lucky Ave", city: "Toronto")
 ```
 
-If you need a collection of values that should be __unique__ or to be able to check if there is a __specific item in there__, use a set
+If you need a collection of values that should be __unique__ or to be able to check if there is a __specific item in there__, use a *set*
 ```swift
 let books = Set(["Nike Bio", "Jobs Bio", "Marvel Comic", "Software Testing", "Marvel Comic"])
 ```
 Marvel Comic will only be stored once
 
-If you need a collection that can contain __duplicates__, or the __order matters__, use an array
+If you need a collection that can contain __duplicates__, or the __order matters__, use an *array*
 ```swift
 let languages = ["Python", "Swift", "Java", "Java" ]
 ```
