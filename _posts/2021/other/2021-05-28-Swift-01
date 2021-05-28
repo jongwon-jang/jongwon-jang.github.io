@@ -1,0 +1,47 @@
+---
+title: "Swift Journey No.1 - Simple Data Types and More"
+date: 2021-05-16 15:51:00 -0500
+categories: other
+---
+# Variables, Simple Data Types, and String Interpolation
+
+## 4 Variable types in Swift that I learned
+`String`, `Int`, `Double`, `Bool`
+
+## How to make a multi-line string
+```swift
+`x3 Multi\
+    Line\
+    String
+`x3
+```
+
+## String Interpolation
+```swift
+var score = 80
+var str = "My test score is \(score)
+```
+## `let` vs `var`
+`let` creates a constant. Variable created with a `let` keyword cannot be modified after its declaration.
+For example,
+```swift
+let name = "Jongwon"
+name = "Jang"
+```
+Xcode will refuse to run the code
+
+## Type Inference and Type Annotation
+```swift
+let str = "hello"
+```
+This makes `str` a string. So later it cannot be reassigned to another type (e.g `Int`or a `Bool`)
+This is called `Type Inference`
+
+To be explicit about the type:
+```swift
+let day: Int = 16
+let happy: Bool = true
+let hello: String = "hello"
+let pi: Double = 3.14
+```
+This way you are not relying on Swift's type inference
